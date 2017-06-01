@@ -1,5 +1,6 @@
 package javaservices;
 
+import javadao.IBaseDAO;
 import javadao.IBooksTypeDAO;
 import javadao.DAOException;
 import javadao.BooksType;
@@ -19,7 +20,11 @@ public abstract class BooksTypeService extends BaseService<BooksType> implements
     @Autowired
     private IBooksTypeDAO booksTypeDAO;
 
-     public BooksType getBooksTypeByBookgenre(String name) throws DAOException {
+    public BooksTypeService(IBaseDAO<BooksType> baseDAO) {
+        super( baseDAO );
+    }
+
+    public BooksType getBooksTypeByBookgenre(String name) throws DAOException {
         return booksTypeDAO.getBooksTypeByBookgenre(name);
     }
    }
