@@ -99,4 +99,36 @@ public class User implements Serializable {
                 ", userProfiles=" + userProfiles +
                 '}';
     }
+
+    public Set<UserProfile> getUserProfiles() {
+        return userProfiles;
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public Set<Books> getBooks() {
+        return books;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
 }

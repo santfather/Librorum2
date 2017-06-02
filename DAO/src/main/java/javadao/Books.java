@@ -85,5 +85,9 @@ import java.util.Set;
 
 
         }
+
+        public Set<User> getUser() {
+            return user;
+        }
     }
 
