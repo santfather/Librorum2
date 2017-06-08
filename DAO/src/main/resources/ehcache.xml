@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd"
+         updateCheck="false">
+<diskStore path="cacheIO" />
+
+
+<defaultCache maxElementsInMemory="10000" eternal="true"
+              overflowToDisk="false" diskPersistent="false"
+              diskExpiryThreadIntervalSeconds="1800" memoryStoreEvictionPolicy="FIFO">
+</defaultCache>
+
+<cache name="by.SantBurmiy.pojo.Books"
+       maxElementsInMemory="300"
+       eternal="false"
+       overflowToDisk="false"
+       timeToIdleSeconds="60"
+       timeToLiveSeconds="60"
+       diskPersistent="false"
+       diskExpiryThreadIntervalSeconds="70"
+       memoryStoreEvictionPolicy="LRU"  />
+
+<cache name="booksCache"
+       maxElementsInMemory="300"
+       eternal="false"
+       overflowToDisk="false"
+       timeToIdleSeconds="60"
+       timeToLiveSeconds="60"
+       diskPersistent="false"
+       diskExpiryThreadIntervalSeconds="70"
+       memoryStoreEvictionPolicy="LRU"  />
+
+
+
+
+</ehcache>
+
+

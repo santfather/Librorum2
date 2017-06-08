@@ -30,6 +30,6 @@
         <authentication-provider user-service-ref="authService"/>
     </authentication-manager>
 
-    <beans:bean id="authService" class="by.SantBurmiy.services.authentific.AuthenticationService"/>
+    <beans:bean id="authService" class="javaservices.AuthenticationService"/>
 
 </beans:beans>
